@@ -29,7 +29,7 @@ def create_app(db_url=None):
  app.config["PROPAGATE_EXCEPTIONS"] = True
  db.init_app(app)
  
- migrate=Migrate(app,db)
+ 
  api=Api(app)
  app.config["JWT_SECRET_KEY"]="262784093388246059040945468442683876552"
  jwt=JWTManager(app)
